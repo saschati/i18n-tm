@@ -1,0 +1,49 @@
+{
+  "name": "i18next-tm",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "i18next translation manager for different groups of files to compare them in other languages.",
+  "repository": "https://github.com/saschati/i18next-tm.git",
+  "author": "Olexander Grigorchyk",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc && yarn prettier:fix && yarn eslint:fix",
+    "eslint:fix": "eslint --fix --ext .ts bin src",
+    "prettier:fix": "prettier --write \"**/*.+(js|ts|jsx|tsx|json|css|scss|md)\"",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "1.x.1",
+    "@types/jest": "29.x.0",
+    "@types/node": "18.x.5",
+    "@typescript-eslint/eslint-plugin": "5.x.2",
+    "@typescript-eslint/parser": "5.x.2",
+    "eslint": "8.x.0",
+    "eslint-config-prettier": "8.x.0",
+    "eslint-config-standard": "17.x.0",
+    "eslint-plugin-import": "2.x.5",
+    "eslint-plugin-n": "15.x.1",
+    "eslint-plugin-node": "11.x.0",
+    "eslint-plugin-prettier": "4.x.1",
+    "eslint-plugin-promise": "6.x.1",
+    "jest": "^29.5.0",
+    "prettier": "2.x.3",
+    "ts-jest": "29.x.0",
+    "ts-node": "^10.9.1",
+    "typescript": "5.x.2"
+  },
+  "bin": {
+    "i18next-tm": "bin/i18next-tm.js"
+  },
+  "dependencies": {
+    "@akgargo/ms-translator-api-client": "0.x.4",
+    "deep-object-diff": "1.x.9",
+    "meow": "11.x.0",
+    "mergician": "1.x.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
